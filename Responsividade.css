@@ -1,0 +1,2253 @@
+@media only screen and (max-width: 380px) {
+    /* RESET CSS */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* ------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ---------------- FONTES PADRÕES DA PÁGINA ----------------- */
+
+/* HEADING 1 (H1) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* HEADING 2 (H2) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* HEADING 3 (H3) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap');
+
+/* HEADING 4 (H4) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* ------------------------------------- */
+
+/* PERSONALIZÃO DA BARRA DE ROLAGEM  */
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #F0EBE3;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #C7BEA2;
+    border-radius: 12px;
+}   
+
+/* ------------------------------------- */
+
+
+/* CORES PADRÕES DO SITE */
+
+:root {
+    --black: #0F0E0E; 
+    --white: #F9F9F9;
+    --blue: #2D31FA;
+    --yellow: #FFE61B;
+}
+
+/* ------------------------------------- */
+
+/* CONTAINER - PARA PADRONIZAÇÃO E ALINHAMENTO DO SITE */
+
+.myContainer {  
+    width: 16.5rem;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------- */
+
+/* PADRONIZAÇÃO - BOTÕES */
+
+.button {
+    font-family: 'Roboto', sans-serif;
+    color: var(--black);
+    text-decoration: none;
+    border: 0.125rem solid #0F0E0E;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #FFE61B 83.17%, rgba(15, 14, 14, 0.2) 116.61%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1s;
+}
+
+/* ------------------------------------- */
+
+/* PADRONIZAÇÃO - TÍTULOS DAS SEÇÕES */
+
+.titulo  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--black);
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 2.5rem 0;
+}
+
+/* ------------------------------------- */
+
+/* NAVBAR */
+
+.barra-de-navegacao-do-topo-da-pagina {
+   /* z-index: 10;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;*/
+    width: 14rem;
+    max-height: 7.563rem;
+    padding: 1.25rem 0.625rem;  
+    margin-bottom: 50px;
+}
+
+.barra-de-navegacao-do-topo-da-pagina ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barra-de-navegacao-do-topo-da-pagina ul li {
+    margin-top: 0.4rem;
+}
+
+.barra-de-navegacao-do-topo-da-pagina ul li a {
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.barra-de-navegacao-do-topo-da-pagina ul li a:hover {
+    border-bottom: 2px solid var(--blue);
+}
+
+/* Definição de link responsivo e visível */
+.barra-de-navegacao-do-topo-da-pagina ul li a:focus {
+    color: var(--blue);
+    border-bottom: 2px solid var(--blue);
+}
+/* ------------------------------------- */
+
+
+/* ---- FIM DA NAVBAR ---- */
+
+
+
+/* Tela de abertura da página */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    width: 16.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+main article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main article h1 {
+    font-size: 2.5rem;
+    color: var(--black);
+    font-family: 'Roboto', sans-serif;
+    line-height: 2.5rem;
+   
+}
+
+main article h1 span {
+    color: var(--blue);
+}
+
+main article a.primary {
+    font-size: 1rem;
+    width: 6.5rem;
+    height: 2rem;
+    padding: 10px 50px;
+    border: 0.125rem solid #0F0E0E;
+    white-space: nowrap;
+}
+
+main article a:hover {
+    transform: scale(1.02);
+    box-shadow: 0.05rem 0.05rem 20px var(--yellow);
+}
+
+/* FOCUS - MANTER STATUS ATIVO PARA ACESSIBILIDADE */
+main article a:focus {
+    box-shadow: 0.05rem 0.05rem 20px var(--yellow);
+    transform: scale(1.02);
+}
+/* ------------------------------------- */
+
+/* ACTIVE - IDENTIFICAR QUE O USUÁRIO CLICOU */
+main article a:active {
+   border-bottom: 0.25rem solid var(--black);
+}
+/* ------------------------------------- */
+
+main aside {
+    width: 16.5rem;
+}
+
+main aside div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+main aside div img {
+    width: 100%;
+    height: 20rem;
+}
+
+.firstImage {  
+    margin-left: 0rem;
+    position: relative;
+    z-index: 0;
+}
+
+.secondImage {  
+    margin-top: -20.625rem;
+    position: relative;
+    z-index: 1;
+    opacity: 80%;
+} 
+
+/* ---- Fim da tela de abertura da página ---- */
+
+
+/* Seção de apresentação da empresa */
+
+.bloco-apresentacao-da-empresa {
+    margin: 0.1rem auto;
+    width: 16.5rem;
+    height: 65.688rem;
+    border: 0.063rem solid var(--black);
+}
+
+.bloco-apresentacao-da-empresa section img {
+    height: 14.688rem;
+    width: 16.5rem;
+}
+
+.bloco-apresentacao-da-empresa section {
+    display: flex;
+    flex-direction: column;
+}
+
+.bloco-apresentacao-da-empresa section aside { 
+    margin: 0 auto;
+    width: 16.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco-apresentacao-da-empresa section h2 {
+    font-family: 'Roboto', sans-serif;
+    color: var(--black);
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--white);
+    background-color: var(--black);
+    width: 16rem;
+    height: 3.625rem;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.bloco-apresentacao-da-empresa section aside div.contentinfo {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;   
+}
+
+.bloco-apresentacao-da-empresa section aside div.nossahistoria {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    margin-top: -2rem;
+}
+
+.bloco-apresentacao-da-empresa section aside div h3.historia {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--white);
+    background-color: var(--black);   
+    width: 13.313rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+} 
+
+.bloco-apresentacao-da-empresa section aside div.nossahistoria p {
+    text-align: justify;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    margin-top: 1.5rem;
+    line-height: 1.2rem;
+}
+
+
+.bloco-apresentacao-da-empresa section aside div.nossosvalores {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.bloco-apresentacao-da-empresa section aside div h3.valores {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--white);
+    background-color: var(--black);   
+    width: 13.313rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    margin-top: 1rem;
+}
+
+.bloco-apresentacao-da-empresa section aside div.nossosvalores p {
+    text-align: justify;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    margin-top: 1.5rem;
+    line-height: 1.2rem;
+}
+
+.bloco-apresentacao-da-empresa section aside div hr {
+    transform: rotate(360deg);
+    width: 10rem;
+    height: 0.1rem;
+    margin: 2rem auto;
+    background-color: var(--black);
+}
+
+/* BOTÃO OPCIONAL CTA */
+
+.bloco-apresentacao-da-empresa section aside button.secondary {
+    border: 0.125rem solid var(--black);
+    background: var(--blue);
+    color: var(--white);
+    border-radius: 10px;
+    cursor: pointer;
+
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    width: 9.25rem;
+    height: 2.563rem;
+}
+
+.bloco-apresentacao-da-empresa section aside button.secondary:hover {
+    transform: scale(1.02);
+    box-shadow: 0.04rem 0.04rem 10px var(--blue);
+}
+
+/* FOCUS - MANTER STATUS ATIVO PARA ACESSIBILIDADE */
+.bloco-apresentacao-da-empresa section aside button.secondary:focus {
+    transform: scale(1.02);
+    box-shadow: 0.04rem 0.04rem 10px var(--blue);
+}
+/* ------------------------------------- */
+
+/* ACTIVE - IDENTIFICAR QUE O USUÁRIO CLICOU */
+.bloco-apresentacao-da-empresa section aside button.secondary:active {
+    border-bottom: 0.25rem solid var(--black);
+}
+/* ------------------------------------- */
+
+/* FIM DA FOLHA DE ESTILO DO BOTÃO CTA OPCIONAL */
+
+
+/* ---- Fim da seção de apresentação da empresa ---- */
+
+
+/* ---- Seção de apresentação dos serviços da empresa ---- */
+
+.abertura-da-secao-servicos { 
+    margin: 0 auto;
+    width: 16.5rem;
+    height: 18.75rem;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.abertura-da-secao-servicos div {  
+    width: 16.5rem;
+    height: fit-content;
+}
+
+.abertura-da-secao-servicos h3 {
+    font-size: 0.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--white);
+    margin-top: 2.75rem;
+    box-sizing: border-box;
+    white-space: nowrap;
+    width: fit-content;
+    margin: 2.75rem auto 1rem auto;
+}
+
+.abertura-da-secao-servicos span {
+    margin: 0 auto;
+    color: var(--black);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    background-color: var(--yellow);
+    padding: 0 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12.5rem;
+    height: 2rem;
+    margin-top: 0.125rem;
+}
+
+.bloco-secao-de-servicos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 52rem;
+    width: 15rem; 
+}
+
+.abertura-da-secao-servicos img {
+    width: 16.5rem;
+    height: 10rem;
+ }
+
+.bloco-apresentacao-do-servico {
+    font-size: 1.125rem;
+    width: 16.5rem;
+    height: 2.5rem; 
+    background-color: rgba(45, 49, 250, 0.5);  
+    fill-opacity: 50%;
+    color: var(--black);
+    cursor: pointer;
+    border: 0.006rem solid var(--black);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    transition: background-color 0.8s;
+}
+
+.bloco-apresentacao-do-servico:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.bloco-descricao-do-servico {
+    display: none;
+}
+
+.bloco-do-servico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 16.4rem;
+    height: 500px;
+    border: 1px solid var(--black);
+}
+
+.bloco-do-servico p {
+    text-align: justify;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.2rem;
+    color: var(--black);
+    padding: 0.625rem;
+}
+
+.bloco-secao-de-servicos article button + article img {
+    width: 15rem;
+    height: 10rem;
+    cursor: pointer;
+    padding: 0.625rem;
+}
+
+.bloco-de-demonstracao-de-servicos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    flex-direction: column;
+    width: 16.5rem;
+}
+
+.slideshow-container {
+    width: 16.5rem;
+    position: relative;
+}
+
+.mySlides img {
+    width: 16.5rem;
+    height: 25.5rem;
+}
+  
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+    
+.botao-para-mudar-imagem {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 90px;
+    background-color: #bbb;
+    display: inline-block;
+    border: none;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+  /* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+
+.segundo-de-bloco-de-demonstracao-de-servicos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.second-slideshow-container {
+    width: 16.5rem;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.secondMySlides img {
+    width: 16.5rem;
+    height: 25.5rem;
+}
+  
+/* Next & previous buttons */
+.secondtPrev, .secondNext {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.secondNext {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.secondtPrev:hover, .secondNext:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+ 
+.segundo-botao-para-mudar-imagem {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* The dots/bullets/indicators */
+.dotTwo {
+    cursor: pointer;
+    height: 12px;
+    width: 90px;
+    background-color: #bbb;
+    display: inline-block;
+    border: none;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dotTwo:hover {
+    background-color: #717171;
+}
+  
+  /* Fading animation */
+.secondFade {
+    animation-name: secondFade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes secondFade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+
+.apresentacao-dos-meios-de-pagamento {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 16.5rem;
+}
+
+.titulo-descricao-dos-pagamentos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--black);
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 2rem auto 2rem auto;
+    text-align: center;
+}
+
+.apresentacao-dos-meios-de-pagamento figure{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: justify;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    width: 15.625rem;
+    height: 11.875rem;
+    margin-top: 1rem;
+}
+
+.apresentacao-dos-meios-de-pagamento figure img {
+    height: 9.375rem;
+}
+
+/* ---- Fim da seção de apresentação dos serviços da empresa ---- */
+
+
+/* ---- Seção de apresentação de recomendações dos serviços ---- */
+
+.bloco-de-apresentacao-das-recomendacoes {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 1480px;
+    width: 16.5rem;
+}
+
+.bloco-de-apresentacao-das-recomendacoes article {
+    border: 2px solid var(--black);
+    width: 16.5rem;
+    height: 27.75rem;
+    padding: 0.625rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bloco-de-apresentacao-das-recomendacoes article img {
+    margin-top: 1.563rem;
+    border-radius: 50%; 
+    width: 130px; 
+    height: 130px;
+}
+
+.bloco-de-apresentacao-das-recomendacoes article h4 {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.bloco-de-apresentacao-das-recomendacoes article div {
+    margin: 2.5rem auto;
+    text-align: justify;
+}
+
+.bloco-de-apresentacao-das-recomendacoes article div p {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    line-height: 1.2rem;
+}
+
+/* ---- Fim da seção de apresentação de recomendações dos serviços ---- */
+
+
+/* ---- Seção de apresentação dos meios de contatos ---- */
+
+.bloco-apresentacao-de-contatos {
+    width: 16.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30rem;
+}
+
+.bloco-apresentacao-de-contatos img{
+    width: 13.5rem;
+    height: 10.75rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.bloco-apresentacao-de-contatos aside form {
+    height: 26.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bloco-apresentacao-de-contatos aside form h4 {
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.bloco-apresentacao-de-contatos aside form input {
+    width: 16rem;
+    height: 1.563rem;
+    margin-top: 2rem;
+}
+
+.bloco-apresentacao-de-contatos aside form input::placeholder {
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.bloco-apresentacao-de-contatos aside form textarea {
+    resize: vertical;
+    height: 16.25rem;
+    width: 16rem;
+    margin-top: 1rem;
+}
+
+.bloco-apresentacao-de-contatos aside form textarea::placeholder {
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.bloco-apresentacao-de-contatos aside form div {
+    width: 16.5rem;
+}
+
+.bloco-apresentacao-de-contatos aside form button.secondary {
+    border: 0.125rem solid var(--black);
+    background: var(--yellow);
+    color: var(--black);
+    border-radius: 0.625rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    box-sizing: border-box;
+    margin: 0.5rem 0;
+    width: 9.25rem;
+    height: 2.563rem;
+    float: right;
+}
+
+.bloco-apresentacao-de-contatos aside form button.secondary:hover {
+    transform: scale(1.02);
+    box-shadow: 0.04rem 0.04rem 10px var(--yellow);
+}
+
+/* FOCUS - MANTER STATUS ATIVO PARA ACESSIBILIDADE */
+.bloco-apresentacao-de-contatos aside form button.secondary:focus {
+    transform: scale(1.02);
+    box-shadow: 0.04rem 0.04rem 10px var(--yellow);
+}
+/* ------------------------------------- */
+
+/* ACTIVE - IDENTIFICAR QUE O USUÁRIO CLICOU */
+.bloco-apresentacao-de-contatos aside form button.secondary:active {
+    border-bottom: 0.25rem solid var(--black);
+}
+/* ------------------------------------- */
+
+.bloco-apresentacao-das-redes-sociais {
+    text-align: center;
+    margin: 6rem 0;
+}
+
+.bloco-apresentacao-das-redes-sociais h4 {
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.bloco-apresentacao-das-redes-sociais article {
+    margin-top: 1.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bloco-apresentacao-das-redes-sociais article div {
+    border: 0.125rem solid var(--black);
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco-apresentacao-das-redes-sociais article div a img {
+    width: 3.5rem;
+    height: 3.5rem;
+
+    transition: transform 0.5s;
+}
+
+.bloco-apresentacao-das-redes-sociais article div a img:hover {
+    transform: scale(1.04);
+}
+
+/* ---- Fim da seção de apresentação dos meios de contatos ---- */
+
+
+/* ---- Seção de Rodapé/Footer ---- */
+
+footer {
+    width: 16.5rem;
+    height: 65.25rem;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: -2rem;
+}
+
+footer .secao-com-barra-de-navegacao-do-final {
+    width: 15rem;   
+    height: 25rem;
+    margin: -8rem 0;
+}
+
+footer .secao-com-barra-de-navegacao-do-final .barra-de-navegacao-do-final-da-pagina {
+    width: 15rem;  
+    height: fit-content;
+    box-sizing: border-box;
+}
+
+footer .secao-com-barra-de-navegacao-do-final .barra-de-navegacao-do-final-da-pagina ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .secao-com-barra-de-navegacao-do-final .barra-de-navegacao-do-final-da-pagina ul li h2 {
+    font-family: 'Roboto', sans-serif;
+    color: var(--black);
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--white);
+    background-color: var(--black);
+
+    width: 14rem;
+    height: 3.625rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .secao-com-barra-de-navegacao-do-final .barra-de-navegacao-do-final-da-pagina ul li {
+    margin-top: 0.4rem;
+}
+
+footer .secao-com-barra-de-navegacao-do-final .barra-de-navegacao-do-final-da-pagina ul li a {
+    font-size: 1.125rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--white);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+footer .secao-com-barra-de-navegacao-do-final .barra-de-navegacao-do-final-da-pagina ul li a:hover {
+    border-bottom: 2px solid var(--white);
+}
+
+/* Definição de link responsivo e visível */
+footer .secao-com-barra-de-navegacao-do-final .barra-de-navegacao-do-final-da-pagina ul li a:focus {
+    color: var(--white);
+    border-bottom: 2px solid var(--white);
+}
+/* ------------------------------------- */
+
+footer .secao-com-barra-de-navegacao-do-final hr {
+    width: 16.5rem;
+}
+
+footer .informacoes-sobre-o-site {
+    width: 16.5rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer .informacoes-sobre-o-site aside {
+    width: 16.5rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .informacoes-sobre-o-site aside h5 {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--white);
+}
+
+footer .informacoes-sobre-o-site aside h5 a {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--white);
+    text-decoration: none;
+}
+
+footer .informacoes-sobre-o-site aside h5 a:hover {
+    border-bottom: 2px solid var(--white);
+}
+
+/* Definição de link responsivo e visível */
+footer .informacoes-sobre-o-site aside h5 a:focus {
+    color: var(--white);
+    border-bottom: 2px solid var(--white);
+}
+/* ------------------------------------- */
+
+footer .informacoes-sobre-o-site aside:nth-child(2) {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .informacoes-sobre-o-site aside:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .informacoes-sobre-o-site aside:nth-child(3) img {
+    height: 3.375rem;
+    width: 3.375rem;
+    margin: 0.625rem auto;
+}
+
+footer .informacoes-sobre-o-site aside:nth-child(3) figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    width: 16.5rem;
+    margin-top: -8rem;
+}
+
+footer h6 {
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--white);
+    text-align: center;
+}
+
+footer div img {
+    box-sizing: border-box;
+    position: absolute;
+    margin: 5rem 0;
+}
+
+
+/* ---- Fim da seção de Rodapé/Footer --- */
+}
+
+
+@media screen and
+(min-width: 330px) and
+(max-width: 430px) {
+    /* RESET CSS */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* ------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ---------------- FONTES PADRÕES DA PÁGINA ----------------- */
+
+/* HEADING 1 (H1) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* HEADING 2 (H2) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* HEADING 3 (H3) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap');
+
+/* HEADING 4 (H4) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* ------------------------------------- */
+
+/* PERSONALIZÃO DA BARRA DE ROLAGEM  */
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #F0EBE3;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #C7BEA2;
+    border-radius: 12px;
+}   
+
+/* ------------------------------------- */
+
+
+/* CORES PADRÕES DO SITE */
+
+:root {
+    --black: #0F0E0E; 
+    --white: #F9F9F9;
+    --blue: #2D31FA;
+    --yellow: #FFE61B;
+}
+
+/* ------------------------------------- */
+
+/* CONTAINER - PARA PADRONIZAÇÃO E ALINHAMENTO DO SITE */
+
+.myContainer {  
+    width: 18.5rem;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------- */
+
+/* PADRONIZAÇÃO - BOTÕES */
+
+.button {
+    font-family: 'Roboto', sans-serif;
+    color: var(--black);
+    text-decoration: none;
+    border: 0.125rem solid #0F0E0E;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #FFE61B 83.17%, rgba(15, 14, 14, 0.2) 116.61%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1s;
+}
+
+/* ------------------------------------- */
+
+/* PADRONIZAÇÃO - TÍTULOS DAS SEÇÕES */
+
+.titulo  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--black);
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 2.5rem 0;
+}
+
+/* ------------------------------------- */
+
+/* NAVBAR */
+
+.barra-de-navegacao-do-topo-da-pagina {
+   /* z-index: 10;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;*/
+    width: 16rem;
+    max-height: 7.563rem;
+    padding: 1.25rem 0.625rem;  
+    margin-bottom: 50px;
+}
+
+.barra-de-navegacao-do-topo-da-pagina ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barra-de-navegacao-do-topo-da-pagina ul li {
+    margin-top: 0.4rem;
+}
+
+.barra-de-navegacao-do-topo-da-pagina ul li a {
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.barra-de-navegacao-do-topo-da-pagina ul li a:hover {
+    border-bottom: 2px solid var(--blue);
+}
+
+/* Definição de link responsivo e visível */
+.barra-de-navegacao-do-topo-da-pagina ul li a:focus {
+    color: var(--blue);
+    border-bottom: 2px solid var(--blue);
+}
+/* ------------------------------------- */
+
+
+/* ---- FIM DA NAVBAR ---- */
+
+
+
+/* Tela de abertura da página */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    width: 18.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+main article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main article h1 {
+    font-size: 2.5rem;
+    color: var(--black);
+    font-family: 'Roboto', sans-serif;
+    line-height: 2.5rem;
+   
+}
+
+main article h1 span {
+    color: var(--blue);
+}
+
+main article a.primary {
+    font-size: 1rem;
+    width: 6.5rem;
+    height: 2rem;
+    padding: 10px 50px;
+    border: 0.125rem solid #0F0E0E;
+    white-space: nowrap;
+}
+
+main article a:hover {
+    transform: scale(1.02);
+    box-shadow: 0.05rem 0.05rem 20px var(--yellow);
+}
+
+/* FOCUS - MANTER STATUS ATIVO PARA ACESSIBILIDADE */
+main article a:focus {
+    box-shadow: 0.05rem 0.05rem 20px var(--yellow);
+    transform: scale(1.02);
+}
+/* ------------------------------------- */
+
+/* ACTIVE - IDENTIFICAR QUE O USUÁRIO CLICOU */
+main article a:active {
+   border-bottom: 0.25rem solid var(--black);
+}
+/* ------------------------------------- */
+
+main aside {
+    width: 18.5rem;
+}
+
+main aside div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+main aside div img {
+    width: 100%;
+    height: 20rem;
+}
+
+.firstImage {  
+    margin-left: 0rem;
+    position: relative;
+    z-index: 0;
+}
+
+.secondImage {  
+    margin-top: -20.625rem;
+    position: relative;
+    z-index: 1;
+    opacity: 80%;
+} 
+
+/* ---- Fim da tela de abertura da página ---- */
+
+
+/* Seção de apresentação da empresa */
+
+.bloco-apresentacao-da-empresa {
+    margin: 0.1rem auto;
+    width: 18.5rem;
+    height: 62.688rem;
+    border: 0.063rem solid var(--black);
+}
+
+.bloco-apresentacao-da-empresa section img {
+    height: 14.688rem;
+    width: 18.5rem;
+}
+
+.bloco-apresentacao-da-empresa section {
+    display: flex;
+    flex-direction: column;
+}
+
+.bloco-apresentacao-da-empresa section aside { 
+    margin: 0 auto;
+    width: 18.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco-apresentacao-da-empresa section h2 {
+    font-family: 'Roboto', sans-serif;
+    color: var(--black);
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--white);
+    background-color: var(--black);
+    width: 16rem;
+    height: 3.625rem;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.bloco-apresentacao-da-empresa section aside div.contentinfo {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;   
+}
+
+.bloco-apresentacao-da-empresa section aside div.nossahistoria {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    margin-top: -2rem;
+}
+
+
+.bloco-apresentacao-da-empresa section aside div h3.historia {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--white);
+    background-color: var(--black);   
+    width: 13.313rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+} 
+
+.bloco-apresentacao-da-empresa section aside div.nossahistoria p {
+    text-align: justify;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    line-height: 1.2rem;
+    margin-top: 2rem;
+}
+
+.bloco-apresentacao-da-empresa section aside div.nossosvalores {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.bloco-apresentacao-da-empresa section aside div h3.valores {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--white);
+    background-color: var(--black);   
+    width: 13.313rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    margin-top: 1rem;
+}
+
+.bloco-apresentacao-da-empresa section aside div.nossosvalores p {
+    text-align: justify;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    line-height: 1.2rem;
+    margin-top: 2rem;
+}
+
+.bloco-apresentacao-da-empresa section aside div hr {
+    transform: rotate(360deg);
+    width: 10rem;
+    height: 0.1rem;
+    margin: 2rem auto;
+    background-color: var(--black);
+}
+
+/* BOTÃO OPCIONAL CTA */
+
+.bloco-apresentacao-da-empresa section aside button.secondary {
+    border: 0.125rem solid var(--black);
+    background: var(--blue);
+    color: var(--white);
+    border-radius: 10px;
+    cursor: pointer;
+
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    width: 9.25rem;
+    height: 2.563rem;
+}
+
+.bloco-apresentacao-da-empresa section aside button.secondary:hover {
+    transform: scale(1.02);
+    box-shadow: 0.04rem 0.04rem 10px var(--blue);
+}
+
+/* FOCUS - MANTER STATUS ATIVO PARA ACESSIBILIDADE */
+.bloco-apresentacao-da-empresa section aside button.secondary:focus {
+    transform: scale(1.02);
+    box-shadow: 0.04rem 0.04rem 10px var(--blue);
+}
+/* ------------------------------------- */
+
+/* ACTIVE - IDENTIFICAR QUE O USUÁRIO CLICOU */
+.bloco-apresentacao-da-empresa section aside button.secondary:active {
+    border-bottom: 0.25rem solid var(--black);
+}
+/* ------------------------------------- */
+
+/* FIM DA FOLHA DE ESTILO DO BOTÃO CTA OPCIONAL */
+
+
+/* ---- Fim da seção de apresentação da empresa ---- */
+
+
+/* ---- Seção de apresentação dos serviços da empresa ---- */
+
+.abertura-da-secao-servicos { 
+    margin: 0 auto;
+    width: 18.5rem;
+    height: 18.75rem;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.abertura-da-secao-servicos div {  
+    width: 18.5rem;
+    height: fit-content;
+}
+
+.abertura-da-secao-servicos h3 {
+    font-size: 0.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--white);
+    margin-top: 2.75rem;
+    box-sizing: border-box;
+    white-space: nowrap;
+    width: fit-content;
+    margin: 2.75rem auto 1rem auto;
+}
+
+.abertura-da-secao-servicos span {
+    margin: 0 auto;
+    color: var(--black);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    background-color: var(--yellow);
+    padding: 0 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12.5rem;
+    height: 2rem;
+    margin-top: 0.125rem;
+}
+
+.bloco-secao-de-servicos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 48rem;
+    width: 16rem; 
+}
+
+.abertura-da-secao-servicos img {
+    width: 18.5rem;
+    height: 10rem;
+ }
+
+.bloco-apresentacao-do-servico {
+    font-size: 1.125rem;
+    width: 18.5rem;
+    height: 2.5rem; 
+    background-color: rgba(45, 49, 250, 0.5);  
+    fill-opacity: 50%;
+    color: var(--black);
+    cursor: pointer;
+    border: 0.006rem solid var(--black);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    transition: background-color 0.8s;
+}
+
+.bloco-apresentacao-do-servico:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.bloco-descricao-do-servico {
+    display: none;
+}
+
+.bloco-do-servico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 18.4rem;
+    border: 1px solid var(--black);
+}
+
+.bloco-do-servico p {
+    text-align: justify;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    padding: 0.625rem;
+}
+
+.bloco-secao-de-servicos article button + article img {
+    width: 16rem;
+    height: 10rem;
+    cursor: pointer;
+    padding: 0.625rem;
+}
+
+.bloco-de-demonstracao-de-servicos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    flex-direction: column;
+    width: 18.5rem;
+}
+
+.slideshow-container {
+    width: 18.5rem;
+    position: relative;
+}
+
+.mySlides img {
+    width: 18.5rem;
+    height: 25.5rem;
+}
+  
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+    
+.botao-para-mudar-imagem {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 90px;
+    background-color: #bbb;
+    display: inline-block;
+    border: none;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+  /* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+
+.segundo-de-bloco-de-demonstracao-de-servicos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.second-slideshow-container {
+    width: 18.5rem;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.secondMySlides img {
+    width: 18.5rem;
+    height: 25.5rem;
+}
+  
+/* Next & previous buttons */
+.secondtPrev, .secondNext {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.secondNext {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.secondtPrev:hover, .secondNext:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+ 
+.segundo-botao-para-mudar-imagem {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* The dots/bullets/indicators */
+.dotTwo {
+    cursor: pointer;
+    height: 12px;
+    width: 90px;
+    background-color: #bbb;
+    display: inline-block;
+    border: none;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dotTwo:hover {
+    background-color: #717171;
+}
+  
+  /* Fading animation */
+.secondFade {
+    animation-name: secondFade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes secondFade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.apresentacao-dos-meios-de-pagamento {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 18.5rem;
+
+}
+
+.titulo-descricao-dos-pagamentos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--black);
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 4rem auto 2rem auto;
+    text-align: center;
+}
+
+.apresentacao-dos-meios-de-pagamento figure{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: justify;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    width: 16.625rem;
+    height: 11.875rem;
+    margin-top: 1rem;
+}
+
+.apresentacao-dos-meios-de-pagamento figure img {
+    height: 9.375rem;
+}
+
+/* ---- Fim da seção de apresentação dos serviços da empresa ---- */
+
+
+/* ---- Seção de apresentação de recomendações dos serviços ---- */
+
+.bloco-de-apresentacao-das-recomendacoes {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 92.5rem;
+    width: 18.5rem;
+}
+
+.bloco-de-apresentacao-das-recomendacoes article {
+    border: 2px solid var(--black);
+    width: 18.5rem;
+    height: 27.75rem;
+    padding: 0.625rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bloco-de-apresentacao-das-recomendacoes article img {
+    margin-top: 1.563rem;
+    border-radius: 50%; 
+    width: 130px; 
+    height: 130px;
+}
+
+.bloco-de-apresentacao-das-recomendacoes article h4 {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.bloco-de-apresentacao-das-recomendacoes article div {
+    margin: 2.5rem auto;
+    text-align: justify;
+}
+
+.bloco-de-apresentacao-das-recomendacoes article div p {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+}
+
+/* ---- Fim da seção de apresentação de recomendações dos serviços ---- */
+
+
+/* ---- Seção de apresentação dos meios de contatos ---- */
+
+.bloco-apresentacao-de-contatos {
+    width: 18.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30rem;
+}
+
+.bloco-apresentacao-de-contatos img{
+    width: 14.5rem;
+    height: 10.75rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.bloco-apresentacao-de-contatos aside form {
+    height: 26.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bloco-apresentacao-de-contatos aside form h4 {
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.bloco-apresentacao-de-contatos aside form input {
+    width: 18rem;
+    height: 1.563rem;
+    margin-top: 2rem;
+}
+
+.bloco-apresentacao-de-contatos aside form input::placeholder {
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.bloco-apresentacao-de-contatos aside form textarea {
+    resize: vertical;
+    height: 16.25rem;
+    width: 18rem;
+    margin-top: 1rem;
+}
+
+.bloco-apresentacao-de-contatos aside form textarea::placeholder {
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.bloco-apresentacao-de-contatos aside form div {
+    width: 18.5rem;
+}
+
+.bloco-apresentacao-de-contatos aside form button.secondary {
+    border: 0.125rem solid var(--black);
+    background: var(--yellow);
+    color: var(--black);
+    border-radius: 0.625rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    box-sizing: border-box;
+    margin: 0.5rem 0;
+    width: 9.25rem;
+    height: 2.563rem;
+    float: right;
+}
+
+.bloco-apresentacao-de-contatos aside form button.secondary:hover {
+    transform: scale(1.02);
+    box-shadow: 0.04rem 0.04rem 10px var(--yellow);
+}
+
+/* FOCUS - MANTER STATUS ATIVO PARA ACESSIBILIDADE */
+.bloco-apresentacao-de-contatos aside form button.secondary:focus {
+    transform: scale(1.02);
+    box-shadow: 0.04rem 0.04rem 10px var(--yellow);
+}
+/* ------------------------------------- */
+
+/* ACTIVE - IDENTIFICAR QUE O USUÁRIO CLICOU */
+.bloco-apresentacao-de-contatos aside form button.secondary:active {
+    border-bottom: 0.25rem solid var(--black);
+}
+/* ------------------------------------- */
+
+.bloco-apresentacao-das-redes-sociais {
+    text-align: center;
+    margin: 6rem 0;
+}
+
+.bloco-apresentacao-das-redes-sociais h4 {
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.bloco-apresentacao-das-redes-sociais article {
+    margin-top: 1.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bloco-apresentacao-das-redes-sociais article div {
+    border: 0.125rem solid var(--black);
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco-apresentacao-das-redes-sociais article div a img {
+    width: 3.5rem;
+    height: 3.5rem;
+
+    transition: transform 0.5s;
+}
+
+.bloco-apresentacao-das-redes-sociais article div a img:hover {
+    transform: scale(1.04);
+}
+
+/* ---- Fim da seção de apresentação dos meios de contatos ---- */
+
+
+/* ---- Seção de Rodapé/Footer ---- */
+
+footer {
+    width: 18.5rem;
+    height: 65.25rem;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: -2rem;
+}
+
+footer .secao-com-barra-de-navegacao-do-final {
+    width: 17rem;   
+    height: 25rem;
+    margin: -8rem 0;
+}
+
+footer .secao-com-barra-de-navegacao-do-final .barra-de-navegacao-do-final-da-pagina {
+    width: 17rem;  
+    height: fit-content;
+    box-sizing: border-box;
+}
+
+footer .secao-com-barra-de-navegacao-do-final .barra-de-navegacao-do-final-da-pagina ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .secao-com-barra-de-navegacao-do-final .barra-de-navegacao-do-final-da-pagina ul li h2 {
+    font-family: 'Roboto', sans-serif;
+    color: var(--black);
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--white);
+    background-color: var(--black);
+
+    width: 16rem;
+    height: 3.625rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .secao-com-barra-de-navegacao-do-final .barra-de-navegacao-do-final-da-pagina ul li {
+    margin-top: 0.4rem;
+}
+
+footer .secao-com-barra-de-navegacao-do-final .barra-de-navegacao-do-final-da-pagina ul li a {
+    font-size: 1.125rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--white);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+footer .secao-com-barra-de-navegacao-do-final .barra-de-navegacao-do-final-da-pagina ul li a:hover {
+    border-bottom: 2px solid var(--white);
+}
+
+/* Definição de link responsivo e visível */
+footer .secao-com-barra-de-navegacao-do-final .barra-de-navegacao-do-final-da-pagina ul li a:focus {
+    color: var(--white);
+    border-bottom: 2px solid var(--white);
+}
+/* ------------------------------------- */
+
+footer .secao-com-barra-de-navegacao-do-final hr {
+    width: 18.5rem;
+}
+
+footer .informacoes-sobre-o-site {
+    width: 18.5rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer .informacoes-sobre-o-site aside {
+    width: 18.5rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .informacoes-sobre-o-site aside h5 {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--white);
+}
+
+footer .informacoes-sobre-o-site aside h5 a {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--white);
+    text-decoration: none;
+}
+
+footer .informacoes-sobre-o-site aside h5 a:hover {
+    border-bottom: 2px solid var(--white);
+}
+
+/* Definição de link responsivo e visível */
+footer .informacoes-sobre-o-site aside h5 a:focus {
+    color: var(--white);
+    border-bottom: 2px solid var(--white);
+}
+/* ------------------------------------- */
+
+footer .informacoes-sobre-o-site aside:nth-child(2) {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .informacoes-sobre-o-site aside:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .informacoes-sobre-o-site aside:nth-child(3) img {
+    height: 3.375rem;
+    width: 3.375rem;
+    margin: 0.625rem auto;
+}
+
+footer .informacoes-sobre-o-site aside:nth-child(3) figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    width: 16.5rem;
+    margin-top: -8rem;
+}
+
+footer h6 {
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--white);
+    text-align: center;
+}
+
+footer div img {
+    box-sizing: border-box;
+    position: absolute;
+    margin: 5rem 0;
+}
+
+
+/* ---- Fim da seção de Rodapé/Footer --- */
+}
+
