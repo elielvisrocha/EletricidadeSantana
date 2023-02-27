@@ -51,9 +51,30 @@
 
 </head>
 <body class="fade">
+
+        <section class="banner-de-aceitar-ou-rejeitar-cookies">
+            <h3>Utilizamos cookies para melhorar a experiência dos usuários e obter insights</h3>
+
+            <article>
+                <p>
+                    Nós utilizamos cookies para proporcionar uma melhor experiência aos nossos usuários,
+                    coletamos insights e usamos <br>essas interações para poder te proporcionar um
+                    serviço de qualidade, buscando sempre entender as <br>suas preferências. Você pode conferir
+                    nossas políticas de cookies.
+                </p>
+            </article>
+
+            <div>
+                <button id="aceitar">Aceitar</button>
+                <button id="rejeitar">Rejeitar</button>
+            </div>
+        </section>
+    
+
+
     <!-- NAVBAR -->
 
-    <nav aria-label="barra de navegação" class="barra-de-navegacao-do-topo-da-pagina" id="home">
+    <nav aria-label="barra de navegação" class="barra-de-navegacao-do-topo-da-pagina container" id="home">
        <ul>
             <li>
                 <a href="#home" title="Home">Home</a>
@@ -68,12 +89,13 @@
             </li>
 
             <li>
-                <a href="#recomendacoes" title="Conheça quem recomenda-nos" role="button">Recomendações</a>
+                <a href="#contate-nos" title="Contate-nos" role="button">Entre em contato conosco</a>
             </li>
 
             <li>
-                <a href="#contate-nos" title="Contate-nos" role="button">Entre em contato conosco</a>
+                <a href="#recomendacoes" title="Conheça quem recomenda-nos" role="button">Recomendações</a>
             </li>
+
        </ul>
     </nav>
 
@@ -81,7 +103,7 @@
         
     <!-- Tela de abertura da página -->
 
-        <main class="myContainer">
+        <main class="container">
             <article>
                 <h1 aria-label="título de apresentação">
                     Um serviço <br>
@@ -100,7 +122,7 @@
 
         
             <aside>
-
+               <img src="./istockphoto-1354931975-612x612-removebg-preview.png" alt="">
             </aside>
         </main>
 
@@ -108,8 +130,8 @@
 
     <h2 class="titulo nossa-empresa" id="nossa-empresa">Nossa empresa</h2>
 
-        <section role="contentinfo" class="bloco-apresentacao-da-empresa myContainer">   
-            <section>
+        <section role="contentinfo" class="bloco-apresentacao-da-empresa">   
+            <section class="container">
                 <img src="./photo-1634269750753-c26682459647.avif" alt="">
                 <aside>
                     <h2>Santana eletricidade</h2>  
@@ -124,7 +146,7 @@
                             Lá do passado pra cá estamos fazendo mais do
                             clientes, acreditamos em 
                             amizades e parcerias. Buscamos oferecer um serviço diferencial e focado na 
-                            satisfação de nossos contratantes e claro sempre buscando melhorias. 
+                            satisfação de nossos contratantes e claro, sempre buscando melhorias. 
                             </p>
                         </div>   
     <!-- Linha de separação -->
@@ -133,14 +155,19 @@
                         <div class="nossosvalores">
                             <h3 class="valores">Nossos valores</h3>
                             <p role="definition" aria-label="Definição de nossos valores">
-                                Nascemos na humildade 
-                                de nossa querida Anápolis.
-                                O anfitrião ainda jovem começou a oferecer uma mão 
-                                de obra promissora e talentosa.
-                                Lá do passado pra cá estamos fazendo mais do
-                                clientes, acreditamos em 
-                                amizades e parcerias. Buscamos oferecer um serviço diferencial e focado na 
-                                satisfação de nossos contratantes e claro sempre buscando melhorias. 
+                                Acreditamos em valores fundamentais 
+                                que nos servem de referência
+                                a todos os serviços que oferecemos afim de
+                                entregarmos nosso melhor. São estes: 
+                                <br>
+                                <ul>
+                                    <li>Humildade</li>
+                                    <li>Agilidade</li>
+                                    <li>Rapidez</li>
+                                    <li>Confiança</li>
+                                    <li>Respeito</li>
+                                    <li>Transparência</li>
+                                </ul>
                             </p>
                         </div>  
                     </div>
@@ -156,18 +183,19 @@
 
     <h2 class="titulo servicos" id="servicos">Serviços</h2>
 
-
-        <section class="abertura-da-secao-servicos myContainer" 
+        <section class="abertura-da-secao-servicos container" 
         role="contentinfo" aria-label="abertura da seção de serviços">
             <div role="dialog">
-             <h3>Procurando pelo melhor serviço elétrico residencial?</h3>
-             <span role="dialog" aria-label="Nos somos a solução">Nos somos a solução!</span>
+            <h3>Procurando pelo melhor serviço elétrico residencial?</h3>
+            <span role="dialog" aria-label="Nos somos a solução">Nos somos a solução!</span>
             </div>
             <img src="./Imagem-da-procura-por-eletricista.png" alt="">       
-         </section>
+        </section>
+
+        <section class="bloco-secao-de-servicos container">
              <section class="bloco-secao-de-servicos" role="contentinfo" aria-label="bloco da seção de serviços">               
                  <article onclick="primeiroServico()" id="blocoDeTeste">
-                     <button class="bloco-apresentacao-do-servico">
+                     <button class="bloco-apresentacao-do-servico container">
                          Instalação de lustres
                          <img src="./exchange.png" alt="">
                      </button>
@@ -188,7 +216,7 @@
                  </article>
      
                  <article onclick="segundoServico()">
-                     <button class="bloco-apresentacao-do-servico">
+                     <button class="bloco-apresentacao-do-servico container">
                          Instalação de LED
                          <img src="./exchange.png" alt="">   
                      </button>
@@ -209,7 +237,7 @@
                  </article>
      
                  <article onclick="terceiroServico()">
-                     <button class="bloco-apresentacao-do-servico">
+                     <button class="bloco-apresentacao-do-servico container">
                          Instalação de luminárias
                          <img src="./exchange.png" alt="">
                      </button>
@@ -230,7 +258,7 @@
                  </article>
      
                  <article onclick="quartoServico()">
-                     <button class="bloco-apresentacao-do-servico">
+                     <button class="bloco-apresentacao-do-servico container">
                          Instalações diversas
                          <img src="./exchange.png" alt="">
                      </button>
@@ -251,7 +279,7 @@
                  </article>
      
                  <article onclick="quintoServico()">
-                     <button class="bloco-apresentacao-do-servico">
+                     <button class="bloco-apresentacao-do-servico container">
                          Instalações residenciais gerais
                          <img src="./exchange.png" alt="">
                      </button>
@@ -271,8 +299,9 @@
                      </article>
                  </article>     
              </section>
+        </section>
 
-        <section class="bloco-de-demonstracao-de-servicos">
+        <section class="bloco-de-demonstracao-de-servicos container">
             <div class="slideshow-container">
 
                 <div class="mySlides fade">
@@ -340,7 +369,7 @@
             afim de facilitar as negociações aceitamos:
         </h3>
 
-        <section class="apresentacao-dos-meios-de-pagamento myContainer" role="complementary">
+        <section class="apresentacao-dos-meios-de-pagamento container" role="complementary">
             <figure aria-label="Transfência por smartphones">
                 <img 
                 src="./pagamento-por-smartphone.png" 
@@ -374,55 +403,13 @@
         </section>
 
 
-    <h2 class="titulo recomendacoes" id="recomendacoes">Recomendações</h2>    
+        
+        <h2 class="titulo contatos" id="contate-nos">Contatos</h2>
+        
+        <!-- Seção de apresentação dos meios de contato com a empresa -->
+        
 
-    <!-- Seção de apresentação das recomendações -->
-
-        <section class="bloco-de-apresentacao-das-recomendacoes myContainer">            
-            <article>
-                <img src="./roberto.png" alt="">
-                <h4>Josef Roberto</h4>
-                <div>
-                    <p>
-                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor ante, elementum vestibulum lectus sed, 
-                        imperdiet consequat elit. Proin lobortis id eros et porttitor. Fusce sodales 
-                        venenatis auctor. Mauris felis libero, imperdiet eget mauris a, convallis interdum neque.” 
-                    </p>
-                </div>
-            </article>
-
-            <article>
-                <img src="./laura.png" alt="">
-                <h4>Laura Ruendo</h4>
-                <div>
-                    <p>
-                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor ante, elementum vestibulum lectus sed, 
-                        imperdiet consequat elit. Proin lobortis id eros et porttitor. Fusce sodales 
-                        venenatis auctor. Mauris felis libero, imperdiet eget mauris a, convallis interdum neque.” 
-                    </p>
-                </div>
-            </article>
-
-            <article>
-                <img src="./reginaldo.png" alt="">
-                <h4>Reginaldo Sousa</h4>
-                <div>
-                    <p>
-                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor ante, elementum vestibulum lectus sed, 
-                        imperdiet consequat elit. Proin lobortis id eros et porttitor. Fusce sodales 
-                        venenatis auctor. Mauris felis libero, imperdiet eget mauris a, convallis interdum neque.” 
-                    </p>
-                </div>
-            </article>
-
-        </section>
-
-    <h2 class="titulo contatos" id="contate-nos">Contatos</h2>
-
-    <!-- Seção de apresentação dos meios de contato com a empresa -->
-
-
-        <section class="bloco-apresentacao-de-contatos myContainer">
+        <section class="bloco-apresentacao-de-contatos container">
             <img src="./imagem-com-representacao-de-contatos.png" alt="">
             <aside>
                <form action="">
@@ -449,13 +436,13 @@
                             required>
                     </label>
                     <label for="email">Digite seu email:
-                            <input 
-                            name="email" 
+                        <input 
+                        name="email" 
                             type="email" 
                             autocomplete="email" 
                             id="email" 
                             required>
-                    </label>
+                        </label>
                     <label for="campo-para-digitar-mensagem">Digite no campo abaixo sua mensagem:
                             <textarea 
                             minlength="30"
@@ -471,11 +458,11 @@
                     <div>
                         <button type="submit" class="button secondary">Enviar mensagem</button>
                     </div>
-               </form>
+                </form>
             </aside>
         </section>
-
-        <section class="bloco-apresentacao-das-redes-sociais myContainer">
+        
+        <section class="bloco-apresentacao-das-redes-sociais container">
             <h4>Nossas redes sociais:</h4>
             <article>
                 <div role="complementary">
@@ -495,7 +482,7 @@
                         >
                     </a>
                 </div>
-
+                
                 <div role="complementary">
                     <a href="">
                         <img src="./Imagem-do-Facebook.png" 
@@ -506,11 +493,54 @@
                 </div>
             </article>
         </section>
-
-    <!-- Seção de Rodapé/Footer -->
+        
+        <h2 class="titulo recomendacoes" id="recomendacoes">Recomendações</h2>    
+    
+        <!-- Seção de apresentação das recomendações -->
+    
+            <section class="bloco-de-apresentacao-das-recomendacoes container">            
+                <article>
+                    <img src="./roberto.png" alt="">
+                    <h4>Josef Roberto</h4>
+                    <div>
+                        <p>
+                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor ante, elementum vestibulum lectus sed, 
+                            imperdiet consequat elit. Proin lobortis id eros et porttitor. Fusce sodales 
+                            venenatis auctor. Mauris felis libero, imperdiet eget mauris a, convallis interdum neque.” 
+                        </p>
+                    </div>
+                </article>
+    
+                <article>
+                    <img src="./laura.png" alt="">
+                    <h4>Laura Ruendo</h4>
+                    <div>
+                        <p>
+                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor ante, elementum vestibulum lectus sed, 
+                            imperdiet consequat elit. Proin lobortis id eros et porttitor. Fusce sodales 
+                            venenatis auctor. Mauris felis libero, imperdiet eget mauris a, convallis interdum neque.” 
+                        </p>
+                    </div>
+                </article>
+    
+                <article>
+                    <img src="./reginaldo.png" alt="">
+                    <h4>Reginaldo Sousa</h4>
+                    <div>
+                        <p>
+                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor ante, elementum vestibulum lectus sed, 
+                            imperdiet consequat elit. Proin lobortis id eros et porttitor. Fusce sodales 
+                            venenatis auctor. Mauris felis libero, imperdiet eget mauris a, convallis interdum neque.” 
+                        </p>
+                    </div>
+                </article>
+    
+            </section>
+            
+        <!-- Seção de Rodapé/Footer -->
     
     <footer>
-        <section class="secao-com-barra-de-navegacao-do-final">
+        <section class="secao-com-barra-de-navegacao-do-final container">
             <nav aria-label="barra de navegação" class="barra-de-navegacao-do-final-da-pagina">
                 <ul>
                     <li>
@@ -537,7 +567,7 @@
 
         </section>
 
-        <section class="informacoes-sobre-o-site">
+        <section class="informacoes-sobre-o-site container">
             <aside>
                 <h5>
                    <a href="#nothing">
@@ -599,7 +629,7 @@
             </aside>
         </section>
 
-        <div>
+        <div class="fechamento-do-footer">
             <h6>
                 Copyright © 2022 PossibilitesDeveloper<br>Todos os direitos reservados.
             </h6>     

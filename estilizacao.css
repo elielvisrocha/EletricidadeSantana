@@ -81,9 +81,17 @@ body::-webkit-scrollbar-thumb {
 
 /* ------------------------------------- */
 
+
+html {
+    overflow-x: hidden !important;
+}
+
+
 /* CONTAINER - PARA PADRONIZAÇÃO E ALINHAMENTO DO SITE */
 
-
+.container {
+    border: 2px solid red;
+}
 
 /* ------------------------------------- */
 
@@ -129,7 +137,7 @@ body::-webkit-scrollbar-thumb {
     position: sticky;
     top: 0;*/
     max-width: 76.313rem;
-    max-height: 2.563rem;
+    max-height: 6.563rem;
     margin: 0 auto;  
     padding: 1.25rem 0.625rem;  
     border-bottom: 2px solid black;    
@@ -137,7 +145,7 @@ body::-webkit-scrollbar-thumb {
 
 .barra-de-navegacao-do-topo-da-pagina ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -207,7 +215,7 @@ main article a.primary {
 
 main article a:hover {
     transform: scale(1.02);
-    box-shadow: 0.05rem 0.05rem 20px var(--yellow);
+    box-shadow: 0 3px 10px rgba(255,230,27, 0.5);
 }
 
 /* FOCUS - MANTER STATUS ATIVO PARA ACESSIBILIDADE */
@@ -224,11 +232,12 @@ main article a:active {
 /* ------------------------------------- */
 
 main aside {
-    background-image: url();
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: cover;
-    width: 50%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: linear-gradient(60deg, var(--white), var(--yellow));
+    box-shadow: 0 3px 10px rgba(50, 50, 50, 0.2); */
 }
 
 /* ---- Fim da tela de abertura da página ---- */
@@ -332,6 +341,24 @@ main aside {
     color: var(--black);
     margin-top: 0.7rem;
 }
+
+.bloco-apresentacao-da-empresa section aside div.nossosvalores ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.bloco-apresentacao-da-empresa section aside div.nossosvalores ul li {
+    font-size: 1.09rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
 
 .bloco-apresentacao-da-empresa section aside div h3.valores {
     font-family: 'Roboto Flex', sans-serif;
@@ -440,14 +467,26 @@ main aside {
     float: right;
 }
 
+.abertura-da-secao-servicos img {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container-bloco-secao-de-servicos {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 76.313rem;  
+}
+
 .bloco-secao-de-servicos {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 35rem;  
-    width: 43.99rem;
-    margin: 0 auto;
+    height: 35rem;
+    margin-left: 2rem;
 }
+
 
 .abertura-da-secao-servicos img {
     max-width: 28.125rem;
@@ -475,10 +514,11 @@ main aside {
     display: block;
     float: right;
     position: absolute;
-    margin-left: 20rem;
+    margin-left: 40rem;
 }
 
 .bloco-apresentacao-do-servico:hover {
+    box-shadow: 0 3px 10px rgba(45, 49, 250, 0.5);
     background-color: var(--blue);
     color: var(--white);
 }
@@ -719,23 +759,29 @@ main aside {
 
 /* ---- Seção de apresentação de recomendações dos serviços ---- */
 
+#recomendacoes {
+    margin-top: 7rem;
+}
+
 .bloco-de-apresentacao-das-recomendacoes {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    max-width: 76.313rem;
+    margin: 2rem auto;
+    margin-top: 5rem;
+    max-width: 76.313rem;   
+    box-sizing: border-box;
 }
 
 .bloco-de-apresentacao-das-recomendacoes article {
-    border: 2px solid var(--black);
-    width: 20.813rem;
+    width: 22.813rem;
     height: 27.75rem;
     padding: 0.625rem;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     flex-direction: column;
+    box-shadow: 0 3px 10px rgba(229,229,229, 0.9);
 }
 
 .bloco-de-apresentacao-das-recomendacoes article img {
@@ -762,6 +808,7 @@ main aside {
     font-size: 1.1rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    padding: 1rem;
     color: var(--black);
 }
 
@@ -779,8 +826,8 @@ main aside {
 }
 
 .bloco-apresentacao-de-contatos img { 
-    width: 48.563rem;
-    height: 28.75rem;
+    width: 60vw;
+    height: 80vh;
     margin-left: -5.125rem;
     box-sizing: border-box;
 }
@@ -793,7 +840,7 @@ main aside {
 }
 
 .bloco-apresentacao-de-contatos aside form fieldset {
-    width: 25.25rem;
+    width: 25rem;
     height: fit-content;
 }
 
@@ -860,7 +907,7 @@ main aside {
 
 .bloco-apresentacao-de-contatos aside form button.secondary:hover {
     transform: scale(1.02);
-    box-shadow: 0.04rem 0.04rem 10px var(--yellow);
+    box-shadow: 0 3px 10px rgba(255,230,27, 0.5);
 }
 
 /* FOCUS - MANTER STATUS ATIVO PARA ACESSIBILIDADE */
@@ -878,6 +925,8 @@ main aside {
 
 .bloco-apresentacao-das-redes-sociais {
     text-align: center;
+    max-width: 76.313rem;
+    margin: 0 auto;
 }
 
 .bloco-apresentacao-das-redes-sociais h4 {
@@ -898,8 +947,6 @@ main aside {
 }
 
 .bloco-apresentacao-das-redes-sociais article div {
-    border: 0.125rem solid var(--black);
-    border-radius: 50%;
     width: 7.5rem;
     height: 7.5rem;
     display: flex;
@@ -924,7 +971,7 @@ main aside {
 
 footer {
     width: 100%;
-    height: 31.25rem;
+    height: 27.25rem;
     background-color: var(--blue);
     display: flex;
     flex-direction: column;
@@ -987,14 +1034,15 @@ footer .secao-com-barra-de-navegacao-do-final .barra-de-navegacao-do-final-da-pa
 /* ------------------------------------- */
 
 footer .secao-com-barra-de-navegacao-do-final hr {
-    width: 76.313rem;   
+    width: 100vw;   
 }
 
 footer .informacoes-sobre-o-site {
-    width: 76.313rem;   
+    width: 76.313rem;
     height: fit-content;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 footer .informacoes-sobre-o-site aside {
@@ -1003,6 +1051,11 @@ footer .informacoes-sobre-o-site aside {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+footer .informacoes-sobre-o-site aside:nth-of-type(1) {
+    display: flex;
+    align-items: center;
 }
 
 footer .informacoes-sobre-o-site aside h5 {
@@ -1056,15 +1109,16 @@ footer .informacoes-sobre-o-site aside:nth-child(3) figure {
     align-items: center;
 }
 
-footer div {
+footer .fechamento-do-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     justify-content: center;
-    width: 76.313rem;
+    width: 100vw;   
+    height: 4rem;
 }
 
-footer h6 {
+footer .fechamento-do-footer h6 {
     font-size: 0.8rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -1072,10 +1126,10 @@ footer h6 {
     text-align: center;
 }
 
-footer div img {
+footer .fechamento-do-footer img {
     box-sizing: border-box;
     position: absolute;
-    margin-left: 36.875rem;
+    margin-left: 73.7rem;
 }
 
 .informacoes-sobre-o-site aside button {  
@@ -1214,6 +1268,7 @@ footer div img {
 }
 
 .abertura-banner-politica-de-cookies div button:hover {
+    box-shadow: 0 3px 10px rgba(255,230,27, 0.5);
     background: yellow;
     text-decoration: none;
 }
@@ -1258,6 +1313,12 @@ footer div img {
     animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
+/* ACTIVE - IDENTIFICAR QUE O USUÁRIO CLICOU */
+/*.animacao-com-efeito-subir-pra-cima:active {
+    border-bottom: 0.25rem solid var(--black);
+}
+*/
+
 /* ----------------------------------------------
  * Generated by Animista on 2022-11-12 20:47:15
  * Licensed under FreeBSD License.
@@ -1293,3 +1354,129 @@ footer div img {
   
 
 /* ---- Fim da seção de Rodapé/Footer --- */
+
+
+.banner-de-aceitar-ou-rejeitar-cookies {
+    border-top: 0.6rem solid var(--black);
+    position: fixed;
+    z-index: 1;
+    position: -webkit-sticky;
+    bottom: 0;
+    width: 100vw;
+    height: 12rem;
+    box-sizing: border-box;
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 2fr 2fr;
+    grid-template-areas: "header buttons" 
+                          "text buttons"
+    ;
+}
+
+.banner-de-aceitar-ou-rejeitar-cookies h3 {
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    margin: 2rem auto 0 auto;
+    width: fit-content;
+    height: fit-content;
+    color: var(--black);
+    grid-area: header;
+    border: 2px solid white;
+}
+
+.banner-de-aceitar-ou-rejeitar-cookies article {
+    color: var(--black);
+    grid-area: text;
+    margin: 2rem 0 2rem 2rem;
+    width: fit-content;
+}
+
+.banner-de-aceitar-ou-rejeitar-cookies article p {
+    text-align: justify;
+    font-size: 1.09rem;
+    line-height: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    margin-top: 0.7rem;
+}
+
+.banner-de-aceitar-ou-rejeitar-cookies div {
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: var(--black);
+    grid-area: buttons;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-de-aceitar-ou-rejeitar-cookies div button {
+    display: block;
+}
+
+.banner-de-aceitar-ou-rejeitar-cookies div button:first-child {
+    border: 0.125rem solid var(--black);
+    background: var(--blue);
+    color: var(--white);
+    border-radius: 0.625rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    width: 9.25rem;
+    height: 2.563rem;
+}
+
+.banner-de-aceitar-ou-rejeitar-cookies div button:first-child:hover {
+    background: var(--blue);
+}
+
+/* FOCUS - MANTER STATUS ATIVO PARA ACESSIBILIDADE */
+.banner-de-aceitar-ou-rejeitar-cookies div button:first-child:focus {
+    transform: scale(1.02);
+    box-shadow: 0.04rem 0.04rem 10px var(--blue);
+}
+/* ------------------------------------- */
+
+/* ACTIVE - IDENTIFICAR QUE O USUÁRIO CLICOU */
+.banner-de-aceitar-ou-rejeitar-cookies div button:first-child:active {
+    border-bottom: 0.25rem solid var(--black);
+}
+/* ------------------------------------- */
+
+.banner-de-aceitar-ou-rejeitar-cookies div button:last-child {
+    border: 0.125rem solid var(--black);
+    background: var(--white);
+    border-radius: 0.625rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    box-sizing: border-box;
+    width: 9.25rem;
+    height: 2.563rem;
+}
+
+.banner-de-aceitar-ou-rejeitar-cookies div button:last-child:hover {
+    background: var(--yellow);
+}
+
+/* FOCUS - MANTER STATUS ATIVO PARA ACESSIBILIDADE */
+.banner-de-aceitar-ou-rejeitar-cookies div button:last-child:focus {
+    transform: scale(1.02);
+    box-shadow: 0.04rem 0.04rem 10px var(--yellow);
+}
+/* ------------------------------------- */
+
+/* ACTIVE - IDENTIFICAR QUE O USUÁRIO CLICOU */
+.banner-de-aceitar-ou-rejeitar-cookies div button:last-child:active {
+    border-bottom: 0.25rem solid var(--black);
+}
+/* ------------------------------------- */

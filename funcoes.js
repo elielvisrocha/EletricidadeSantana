@@ -1,3 +1,12 @@
+document.getElementById("aceitar").addEventListener("click", () => {
+  document.querySelector(".banner-de-aceitar-ou-rejeitar-cookies").style.display = "none"
+})
+
+document.getElementById("rejeitar").addEventListener("click", () => {
+  document.querySelector(".banner-de-aceitar-ou-rejeitar-cookies").style.display = "none"
+})
+
+
 /* BLOCO DE FUNÇÕES PARA EXIBIÇÃO DA DESCRIÇÃO DOS SERVIÇOS */
 function primeiroServico() {
     let primeiroServico = document.getElementsByClassName("bloco-descricao-do-servico");
@@ -124,4 +133,19 @@ function remover_banner_cookie() {
   let remover = document.getElementsByClassName("abertura-banner-politica-de-cookies");
   remover[0].classList.replace("abertura-banner-politica-de-cookies", "banner-politica-de-cookies");
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
