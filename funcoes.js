@@ -135,6 +135,11 @@ function remover_banner_cookie() {
 }
 
 
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") {
+      remover_banner_cookie()
+    }
+})
 
 
 
